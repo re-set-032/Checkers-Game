@@ -1,7 +1,7 @@
 # Checkers-Game- HEHE BOII Checkers
-# Developer - ronin117-prog
-# Version - Alpha version for testing
-# Lang - Python + Tkinter(for GUI)
+Developer - ronin117-prog
+Version - Alpha version for testing
+Lang - Python + Tkinter(for GUI)
 
 Solo developed checkers game made using game trees (minimax algorithm with alpha beta pruning)
 

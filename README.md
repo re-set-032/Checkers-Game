@@ -1,4 +1,4 @@
-# Checkers-Game- HEHE BOII Checkers
+# Checkers-Game
 Developer - ronin117-prog
 
 Version - Alpha version for testing

@@ -1,7 +1,7 @@
 # Checkers-Game
 Developer - ronin117-prog
 
-Version - Alpha version for testing
+Version - Stable
 
 Lang - Python + Tkinter(for GUI)
 

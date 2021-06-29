@@ -31,15 +31,26 @@ Control mechanism implemented for the human player in Human vs AI mode is briefl
 > 3. Once selected, all possible moves from that checker will be highlighted as blue tiles as mentioned below.
 > 4. If the player wishes to move other checker instead of the one that's selected, then the player has to unselect the selected checker before selecting that other checker.
 
-![1](https://user-images.githubusercontent.com/68694355/123746129-d72f5c80-d8ce-11eb-97ca-4b480c920e4f.PNG)
+<p align="center">
+  <img width="300" height="300" src="https://user-images.githubusercontent.com/68694355/123746129-d72f5c80-d8ce-11eb-97ca-4b480c920e4f.PNG">
+</p>
+
 ## Implementation
+
+The game board initially contains 12 black checkers and 12 red checkers. By default, the red player will make the first move in both game modes, then black and this will continue till one of them wins. There are 4 different checker pieces (2 for each player- normal and king checker marked as N and K)
+
+<p align="center">
+  <img width="300" height="300" src="https://user-images.githubusercontent.com/68694355/123748709-304cbf80-d8d2-11eb-9299-3606cf5a7cc8.PNG">
+</p>
 
 The internal implementation uses two checker boards - internal board and the GUI checker board.
 The changes in board state through game moves are first made in the internal board before updating the GUI board which gets updated after each move has been made internally.
 For computing the next move, minimax algorithm (with αβ pruning) is used where black AI is the max player and the red AI is the min player. The depth
 limit for black AI is based on the difficulty level selected from the start menu whereas the red AI has a fixed depth limit of 1. The scoring criteria for a game state is discussed in detail in the next section.
 
-![2](https://user-images.githubusercontent.com/68694355/123746459-4b6a0000-d8cf-11eb-9528-ddd72b370a4d.PNG)
+<p align="center">
+  <img width="300" height="300" src="https://user-images.githubusercontent.com/68694355/123746459-4b6a0000-d8cf-11eb-9528-ddd72b370a4d.PNG">
+</p>
 
 ## Heuristics used in scoring mechanism
 
@@ -47,7 +58,9 @@ Heuristics used - Tile + Distance + Count score
 The heuristic score of any game state is defined as the cumulative summation of three different scores which are mentioned below:
 - Tile Score : This scoring mechanism assigns each checker with a tile score on which it is located based on its distance from the center. The idea behind this is to prioritize defense (as checkers closer to the center will have higher probability of getting attacked by the opponent) while moving in order to increase your winning chance.
 
-![3](https://user-images.githubusercontent.com/68694355/123748390-c46a5700-d8d1-11eb-86e5-2aa81fcab3df.PNG)
+<p align="center">
+  <img width="300" height="300" src="https://user-images.githubusercontent.com/68694355/123748390-c46a5700-d8d1-11eb-86e5-2aa81fcab3df.PNG">
+</p>
 
 > T<sub>score</sub>(Checker) = Chess board distance ofcenter tile (if present otherwise calculated considering the mid-point of the board) and the checker’s tile.
 

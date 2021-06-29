@@ -1,9 +1,8 @@
 # Author - IIT2018032
 # Question - Checkers game simulator using game trees (added alpha beta pruning)
-# Version - Alpha prototype 2
+# Version - Alpha
 # Features - AI vs AI mode + Human vs AI mode with 3 difficulty modes (for now)
 # Pre-requisites - Python + Tkinter (for GUI)
-# This one is done in python due to lines of code heuristics I had in my mind
 # To run the code simply type python3 FILE_NAME.py on your terminal
 
 """
@@ -110,7 +109,7 @@ class main_GUI:
         self.mainGUI.title("CHECKERS MENU")
 
         # Game Title (I chose this title to make myself motivated to make this game)
-        Label(self.mainFrame, text="HEHE BOII CHECKERS", pady=40, fg="white", bg='black', font=titleFont).pack()
+        Label(self.mainFrame, text="CHECKERS", pady=40, fg="white", bg='black', font=titleFont).pack()
 
         # Play Button (red AI vs black AI) (Primary)
         Button(self.mainFrame, text="Play AI vs AI", pady=15, padx=20, fg="yellow", bg='black',

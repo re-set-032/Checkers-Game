@@ -49,7 +49,7 @@ For computing the next move, minimax algorithm (with αβ pruning) is used where
 limit for black AI is based on the difficulty level selected from the start menu whereas the red AI has a fixed depth limit of 1. The scoring criteria for a game state is discussed in detail in the next section.
 
 <p align="center">
-  <img width="300" height="300" src="https://user-images.githubusercontent.com/68694355/123746459-4b6a0000-d8cf-11eb-9528-ddd72b370a4d.PNG">
+  <img width="330" height="300" src="https://user-images.githubusercontent.com/68694355/123746459-4b6a0000-d8cf-11eb-9528-ddd72b370a4d.PNG">
 </p>
 
 ## Heuristics used in scoring mechanism

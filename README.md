@@ -21,7 +21,7 @@ Rules considered of this game simulation are pretty standard and straight forwar
 > 7. Also, even if a player has pieces on board but cant make a move on his/her turn (if all pieces ofthe player are blocked by enemy ones) then the opponent is declared a winner.
 
 Currently includes AI vs AI simulations for test purposes and Human vs AI mode for normal playing.
-Three difficulty levels: Normal, Hard and BOSS_LVL (based on the depth of min-max tree)
+Three difficulty levels: Normal, Hard and Extreme (based on the depth of min-max tree)
 
 ## Controls
 
